@@ -33,6 +33,7 @@ import DateDifferenceCalculator from "./pages/DateDifferenceCalculator";
 import RandomNumberGenerator from "./pages/RandomNumberGenerator";
 import WordCounter from "./pages/WordCounter";
 import FuelCostCalculator from "./pages/FuelCostCalculator";
+import FAQ from "./components/FAQ";
 
 const queryClient = new QueryClient();
 
@@ -76,6 +77,7 @@ const App = () => (
             <HorizontalAd position="top" maxWidth="max-w-4xl" />
             <FooterTop />
           </main>
+          {/* <FAQ/> */}
           <Footer />
         </div>
       </BrowserRouter>

@@ -84,7 +84,7 @@ const FooterTop: React.FC = () => {
               <h3 className="font-bold text-lg mb-3 text-primary">{section.title}</h3>
               <ul className="space-y-2">
                 {section.links.map((link, i) => (
-                  <li key={i} className="text-xs">{link}</li>
+                  <li key={i} className="text-xs text-muted-foreground">{link}</li>
                 ))}
               </ul>
             </div>

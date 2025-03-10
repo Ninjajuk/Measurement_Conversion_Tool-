@@ -11,12 +11,19 @@ import {
   Utensils,
   FileText,
   Scale,
-  Calendar,
+  Calendar,Clock,
+  Clock12,
+  QrCode,
+  Coins,
+  Dice2,
+  ChartNoAxesColumnDecreasingIcon
 } from "lucide-react";
 import { HorizontalAd } from "../components/ui/AdTopBottom";
 import ReviewSlider from "@/components/ui/ReviewSlider";
 import ImageResizerGuide from "@/components/ui/MultiToolCalculator";
 import MultiToolCalculator from "@/components/ui/MultiToolCalculator";
+import { FaRegCompass, FaYoutube } from "react-icons/fa";
+import HeroSection from "@/components/Hero";
 
 const features = [
   {
@@ -79,7 +86,7 @@ const features = [
     id: "time-zone-converter",
     name: "Time-Zone-Converter",
     description: "Different time Zine",
-    icon: FileText,
+    icon: Clock12,
     path: "/time-zone-converter",
   },
   {
@@ -124,13 +131,77 @@ const features = [
     icon: Landmark,
     path: "/calculators/income-tax-old",
   },
+  {
+    id: "Digital Clock",
+    name: "Time-Zone-Converter",
+    description: "Different time Zine",
+    icon: Clock,
+    path: "/time-zone-converter",
+  },
+  {
+    id: "time-zone-converter",
+    name: "World Clock",
+    description: "World time Zone",
+    icon: Clock12,
+    path: "/time-zone-converter",
+  },
+  {
+    id: "time-zone-converter",
+    name: "URL Shortener",
+    description: "Easily and smoothj URL Shortener",
+    icon: Clock12,
+    path: "/time-zone-converter",
+  },
+  {
+    id: "time-zone-converter",
+    name: "Youtube Thumbnail Download",
+    description: "Easily and smoothj Youtube",
+    icon: FaYoutube,
+    path: "/time-zone-converter",
+  },
+  {
+    id: "time-zone-converter",
+    name: "QR Code Generator",
+    description: "Easily generate QR Code",
+    icon: QrCode,
+    path: "/time-zone-converter",
+  },
+  {
+    id: "time-zone-converter",
+    name: "Coin Flip",
+    description: "Easily flip Coin Flip",
+    icon: Coins,
+    path: "/time-zone-converter",
+  },
+  {
+    id: "time-zone-converter",
+    name: "Virtual Dice",
+    description: "Easily flip Dice ",
+    icon: Dice2,
+    path: "/time-zone-converter",
+  },
+  {
+    id: "time-zone-converter",
+    name: "Random Color Generator",
+    description: "Easily flip Dice ",
+    icon: ChartNoAxesColumnDecreasingIcon,
+    path: "/time-zone-converter",
+  },
+  {
+    id: "time-zone-converter",
+    name: "AI Powerd Lucky Number",
+    description: "Easily flip Dice ",
+    icon: FaRegCompass,
+    path: "/time-zone-converter",
+  },
 ];
 
 export default function Index() {
   return (
     <div className="container mx-auto px-4 pt-24 pb-12 min-h-screen">
       <div className="max-w-4xl mx-auto w-full">
-        <h1 className="text-4xl font-bold mb-2 text-center pt-16">NinjaTool</h1>
+        {/* <HeroSection/> */}
+        <h1 className="text-4xl font-bold mb-2 text-center pt-16"> Welcome to Multi-Tool Webiste <span className="text-primary font-bold">NinjaTool</span></h1>
         <p className="text-muted-foreground text-center mb-12">
          Calculate anything with our tools at your fingertips
         </p>
